@@ -8,5 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class HelloWorldComponent implements OnInit {
 	text = `SOME TEXT!`;
 	fontColor = Math.random() > 0.5 ? `red`: `green`;
+	canClick = Math.random() > 0.5 ? true: false;
 	ngOnInit() { }
 }

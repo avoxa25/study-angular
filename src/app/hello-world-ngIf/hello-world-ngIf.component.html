@@ -1,1 +1,5 @@
-<div class="hello-world-ngIf"> Hello HelloWorldNgIfComponent! </div>
+<h1>Hello World ngIf</h1>
+<button (click)="editClick()">Edit text</button>
+<p *ngIf="canEdit; else noEdit">You can edit that text!</p>
+<ng-template #noEdit>Readonly, sorry</ng-template>
+<p [contentEditable]="canEdit">{{message}}</p>

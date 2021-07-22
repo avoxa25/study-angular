@@ -9,5 +9,8 @@ export class HelloWorldComponent implements OnInit {
 	text = `SOME TEXT!`;
 	fontColor = Math.random() > 0.5 ? `red`: `green`;
 	canClick = Math.random() > 0.5 ? true: false;
+	alertMessage() {
+		alert(`Button has been clicked`)
+	}
 	ngOnInit() { }
 }
